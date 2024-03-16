@@ -2,6 +2,7 @@
   "name": "react-dev-to",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vsonmez.github.io/sample-dashboard",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
     "@testing-library/jest-dom": "^5.17.0",
@@ -22,9 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:prod": "set NODE_ENV=production & react-scripts build",
-    "build:test": "set NODE_ENV=test & react-scripts build",
-    "build:prp": "set NODE_ENV=preprod & react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
