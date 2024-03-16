@@ -1,10 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import LoginPage from "../pages/Login.page";
 import RouteGuardComponent from "../auth/RouteGuard.component";
 import ErrorPage from "../pages/Error.page";
 import ErrorSubPage from "../pages/ErrorSub.page";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <RouteGuardComponent />,
