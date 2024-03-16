@@ -13,7 +13,7 @@ type ButtonProps = {
 };
 
 const Button = ({ className, onClick, text, variant = "primary", type = "button", isButtonBordered }: ButtonProps) => {
-  const baseClass = "text-white font-bold py-2 px-4 rounded transition-colors";
+  const baseClass = `${isButtonBordered ? "" : "text-white"} font-bold py-2 px-4 rounded transition-colors`;
   const buttonClass = React.useRef(`${baseClass} ${className || ""}`);
 
   const [buttonStyles, setButtonStyles] = React.useState(
